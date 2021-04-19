@@ -6,7 +6,7 @@
     <div id="body">
       <div id="logoarea">
         <h1 id="logomain"><span style="color: DarkRed">Da</span>Vinci</h1>
-        <p id="untertitel">Ihre Pizzeria des Vertrauens!</p>
+        <p id="untertitel">Die Pizzeria Ihres Vertrauens!</p>
       </div>
       <hr class = "dashed"/>
       <div id = "inhalt">

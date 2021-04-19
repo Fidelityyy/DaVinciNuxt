@@ -230,7 +230,7 @@ hr.dashed {
 }
 
 #zahlungstextbox {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
