@@ -10,6 +10,10 @@
         <img src="~assets/pizza2.png" alt="Pizza vector" /><img />
         <hr class="dashed" />
       </div>
+      <h2>
+        Wir sind neugierig auf Ihr Feedback! Schreiben Sie uns gerne eine
+        Nachricht.
+      </h2>
       <div>
         <div class="container">
           <form action="action_page.php">
@@ -49,7 +53,12 @@
         </div>
       </div>
     </div>
-    <div id="footer"><p>Max Mustermann - Mustermannstraße 23 - 35234 Musterstadt - Steuernummer: 00000000000 - Landgericht Musterstadt</p></div>
+    <div id="footer">
+      <p>
+        Max Mustermann - Mustermannstraße 23 - 35234 Musterstadt - Steuernummer:
+        00000000000 - Landgericht Musterstadt
+      </p>
+    </div>
   </div>
 </template>
 
@@ -95,7 +104,7 @@ export default {};
 }
 
 #footer {
-  display:flex;
+  display: flex;
   width: 100vw;
   background-color: antiquewhite;
   font-family: "Bitter", serif;
@@ -111,6 +120,13 @@ h1 {
   text-align: center;
   font-family: "Bitter", serif;
   font-size: 8vh;
+}
+
+h2 {
+  font-family: "Bitter", serif;
+  font-size: 3vh;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
 }
 
 hr.dashed {
