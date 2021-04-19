@@ -19,7 +19,7 @@
             src="https://www.planet-schule.de/mm/nie-wieder-keine-ahnung/malerei/img/kuenstler_da_vinci.jpg"
             style="width: 10vw; height: auto; border-radius: 50%"
           /><img />
-          <p>Leonardo Da Vinci</p>
+          <p class="leonardo">Leonardo Da Vinci</p>
         </div>
         <div id="pizzablock">
           <img
@@ -27,8 +27,12 @@
             src="https://www.koch-mit.de/app/uploads/2020/02/ofenpizza.jpg"
             style="width: 20vw; border-radius: 5%"
           /><img />
-          <p>Unsere Pizzeria</p>
+          <p id="pizzatext">
+            Unsere Traditions-Pizzeria besteht seit Ihrer Eröffnung im Jahre
+            1472 und überzeugt seitdem mit ihren frischen und leckeren Pizzen.
+          </p>
         </div>
+        <div id="abtrennung"></div>
       </div>
     </div>
     <div id="footer"></div>
@@ -87,11 +91,10 @@ export default {};
 }
 
 hr.dashed {
-  display:flex;
+  display: flex;
   width: 100%;
   border-top: 3px dashed #bbb;
   align-self: center;
-
 }
 #zweitercontainer {
   display: flex;
@@ -108,6 +111,16 @@ hr.dashed {
 
 #pizzablock {
   display: flex;
+  width: 10vw;
+  height: auto;
+  align-content: center;
+}
+
+#pizzatext {
+  margin-left: 5vw;
+  display: flex;
+  width: 10vw;
+  height: 10vh;
 }
 
 #footer {

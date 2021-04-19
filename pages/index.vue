@@ -61,11 +61,13 @@ export default {
   overflow-y: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  width: 100vw;
 }
 
 #logomain {
   font-family: "Great Vibes", cursive;
   font-size: 20vh;
+  text-align: center;
 }
 
 #untertitel {
@@ -75,7 +77,10 @@ export default {
 }
 
 hr.dashed {
+  display:flex;
   border-top: 3px dashed #bbb;
+  width: 80vw;
+  align-self: center;
 }
 
 #pizzavector {
