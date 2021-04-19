@@ -7,7 +7,7 @@
       <H1>Kontakt</H1>
       <Div id="erstercontainer">
         <Hr class="dashed" />
-        <Img src="~assets/pizza2.png" alt="Pizza vector" /><Img />
+        <img src="~assets/pizza2.png" alt="Pizza vector" /><img />
         <Hr class="dashed" />
       </Div>
       <H2>
