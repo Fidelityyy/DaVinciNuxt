@@ -15,6 +15,10 @@ export default {
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap"
       }
     ]
   },

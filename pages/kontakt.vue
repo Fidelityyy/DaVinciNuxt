@@ -1,23 +1,16 @@
 <template>
   <div id="container">
-    <div id="header">
+     <div id="header">
       <Navbar/>
     </div>
     <div id="body">
-      <div id="logoarea">
-        <h1 id="logomain"><span style="color: DarkRed">Da</span>Vinci</h1>
-        <p id="untertitel">Ihre Pizzeria des Vertrauens!</p>
-      </div>
     </div>
     <div id="footer"></div>
   </div>
 </template>
 
 <script>
-import Navbar from "../components/Navbar.vue";
-export default {
-  components: { Navbar },
-};
+export default {};
 </script>
 
 <style>
@@ -52,17 +45,6 @@ export default {
   justify-self: center;
   padding-top: 10vh;
   flex-direction: column;
-}
-
-#logomain {
-  font-family: "Great Vibes", cursive;
-  font-size: 20vh;
-}
-
-#untertitel {
-  text-align: center;
-  font-family: "Bitter", serif;
-  font-size: 4vh;
 }
 
 #footer {
