@@ -7,7 +7,7 @@
       <div id="erstercontainer">
         <hr class="dashed" />
         <img
-          src="https://sogno-mio.de/wp-content/uploads/2021/03/pngwing.com_-150x150.png"
+          src="~assets/pizza2.png"
           alt="Pizza vector"
         /><img />
         <hr class="dashed" />

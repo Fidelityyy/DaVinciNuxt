@@ -11,7 +11,7 @@
       <hr class = "dashed"/>
       <div id = "inhalt">
         <div id = "pizzavector">
-          <img src = "https://sogno-mio.de/wp-content/uploads/2021/03/pngwing.com_-150x150.png" alt="Pizza vector"><img>
+          <img src = "~assets/pizza.png" alt="Pizza vector" style="width: 20vw; height: auto; margin-top: 5vh;"><img>
         </div>
       </div>
     </div>
@@ -62,6 +62,9 @@ export default {
   -ms-overflow-style: none;
   scrollbar-width: none;
   width: 100vw;
+  background-image: url('~assets/davinci2.jpg');
+  background-size: 80%;
+  background-position: top;
 }
 
 #logomain {
