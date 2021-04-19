@@ -4,7 +4,7 @@
       <Navbar />
     </div>
     <div id="body">
-      <div id="erstescontainer">
+      <div id="erstercontainer">
         <hr class="dashed" />
         <img
           src="https://sogno-mio.de/wp-content/uploads/2021/03/pngwing.com_-150x150.png"
@@ -27,7 +27,7 @@
             src="https://www.koch-mit.de/app/uploads/2020/02/ofenpizza.jpg"
             style="width: 20vw; border-radius: 5%"
           /><img />
-          <p>Unsere Pizzeria </p>
+          <p>Unsere Pizzeria</p>
         </div>
       </div>
     </div>
@@ -82,10 +82,17 @@ export default {};
 
 #erstercontainer {
   display: flex;
-  flex-direction: row;
-  width: 100vw;
+  width: 90vw;
+  justify-content: center;
 }
 
+hr.dashed {
+  display:flex;
+  width: 100%;
+  border-top: 3px dashed #bbb;
+  align-self: center;
+
+}
 #zweitercontainer {
   display: flex;
   flex-direction: column;
@@ -94,17 +101,13 @@ export default {};
 }
 
 #davinciblock {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-self: start;
 }
 
 #pizzablock {
-display:flex;
-}
-
-hr.dashed {
-  border-top: 3px dashed #bbb;
+  display: flex;
 }
 
 #footer {

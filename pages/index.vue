@@ -8,6 +8,12 @@
         <h1 id="logomain"><span style="color: DarkRed">Da</span>Vinci</h1>
         <p id="untertitel">Ihre Pizzeria des Vertrauens!</p>
       </div>
+      <hr class = "dashed"/>
+      <div id = "inhalt">
+        <div id = "pizzavector">
+          <img src = "https://sogno-mio.de/wp-content/uploads/2021/03/pngwing.com_-150x150.png" alt="Pizza vector"><img>
+        </div>
+      </div>
     </div>
     <div id="footer"></div>
   </div>
@@ -52,6 +58,9 @@ export default {
   justify-self: center;
   padding-top: 10vh;
   flex-direction: column;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #logomain {
@@ -63,6 +72,19 @@ export default {
   text-align: center;
   font-family: "Bitter", serif;
   font-size: 4vh;
+}
+
+hr.dashed {
+  border-top: 3px dashed #bbb;
+}
+
+#pizzavector {
+  display:flex;
+  justify-content: center;
+}
+
+#body::-webkit-scrollbar {
+  display:none;
 }
 
 #footer {
