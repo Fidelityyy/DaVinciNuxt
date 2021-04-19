@@ -1,72 +1,69 @@
 <template>
-  <div id="container">
-    <div id="header">
+  <Div id="container">
+    <Div id="header">
       <Navbar />
-    </div>
-    <div id="body">
-      <h1 id="überschrift">Historie</h1>
-      <div id="erstercontainer">
-        <hr class="dashed" />
-        <img src="~assets/pizza2.png" alt="Pizza vector" /><img />
-        <hr class="dashed" />
-      </div>
-      <div id="leonardocontainer">
-        <div id="leonardobox">
+    </Div>
+    <Div id="body">
+      <H1 id="überschrift">Historie</H1>
+      <Div id="erstercontainer">
+        <Hr class="dashed" />
+        <img src="~assets/pizza2.png" alt="Pizza vector" />
+        <Hr class="dashed" />
+      </Div>
+      <Div id="leonardocontainer">
+        <Div id="leonardobox">
           <img src="~assets/davinciportait.jpg" id="leonardobild" />
-          <p id="#leonardobildunterschrift">Leonardo Da Vinci</p>
-        </div>
-        <p id="leonardotext">
+          <P id="#leonardobildunterschrift">Leonardo Da Vinci</P>
+        </Div>
+        <P id="leonardotext">
           Die Geschichte unseres Unternehmens fängt im Jahre 1472 an, als der
           Gründer unserer Pizzeria, Leonardo Da Vinci, sich mit 20 Jahren dazu
           entschließt, sein Hobby zum Beruf zu machen und eine Pizzeria zu
-          gründen.<br />Da Vinci - eher bekannt durch seine literarischen Werke
+          gründen.<Br />Da Vinci - eher bekannt durch seine literarischen Werke
           - ist selbst ein großer Pizza-Fan mit Leib und Seele. Er versucht die
           Branche mit seinen ausgefallenen Kreationen zu revolutionieren und
           scheut dabei keinerlei Kosten und Mühe.
-        </p>
-      </div>
-      <div id="ofenpizzabox">
-        <p id="ofentext">
+        </P>
+      </Div>
+      <Div id="ofenpizzabox">
+        <P id="ofentext">
           Diese Einstellung von Da Vinci haben wir uns zum Motto gemacht! Wir
-          bieten Ihnen stets neue Kreationen zu unschlagbarem Preis. <br />
+          bieten Ihnen stets neue Kreationen zu unschlagbarem Preis. <Br />
           Hierfür verwenden wir natürliche stets frische und echt italienische
           Zutaten.
-        </p>
+        </P>
         <img src="~assets/ofenpizza.jpg" id="ofenpizza" />
-      </div>
-      <div id="pizzeria">
-        <img src="~assets/pizzeria.webp" id="pizzeriabild" /><img />
-        <p id="pizzeriatext">
+      </Div>
+      <Div id="pizzeria">
+        <img src="~assets/pizzeria.webp" id="pizzeriabild" />
+        <P id="pizzeriatext">
           Unser Ristorante bietet Ihnen ein Ambiente, das seinesgleichen sucht.
           Genießen Sie eine leckere Margherita-Pizza, während Sie den Abend auf
           unserer Terasse mit Meeresblick ausklingen lassen oder entspannen Sie
           sich an unserem Kamin zu einem köstlichen Cappucino.
-        </p>
-      </div>
-      <div id="zahlungsmethoden">
+        </P>
+      </Div>
+      <Div id="zahlungsmethoden">
         <img src="~assets/kreditkarte.png" id="kreditkarte" />
-        <div id="zahlungstextbox">
-          <h1 id="zahlungsüberschrift">
+        <Div id="zahlungstextbox">
+          <H1 id="zahlungsüberschrift">
             Haben Sie mal nicht das nötige Geld dabei? Kein Problem!
-          </h1>
-          <p1 id="zahlungsmethodentext"
+          </H1>
+          <P1 id="zahlungsmethodentext"
             >Bei uns können Sie in Bar oder bequem per Debitkarte bezahlen -
-            natürlich kontaktlos!</p1
+            natürlich kontaktlos!</P1
           >
-        </div>
-      </div>
-    </div>
-    <div id="footer">
-      <p>
-        Max Mustermann - Mustermannstraße 23 - 35234 Musterstadt - Steuernummer:
-        00000000000 - Landgericht Musterstadt
-      </p>
-    </div>
-  </div>
+        </Div>
+      </Div>
+    </Div>
+    <Footer />
+  </Div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "historie",
+};
 </script>
 
 <style>
@@ -242,14 +239,5 @@ hr.dashed {
   text-align: center;
   font-family: "Bitter", serif;
   font-size: 8vh;
-}
-
-#footer {
-  display: flex;
-  width: 100vw;
-  background-color: rgb(250, 241, 228);
-  font-family: "Bitter", serif;
-  justify-content: center;
-  align-items: center;
 }
 </style>

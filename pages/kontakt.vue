@@ -1,69 +1,72 @@
 <template>
-  <div id="container">
-    <div id="header">
+  <Div id="container">
+    <Div id="header">
       <Navbar />
-    </div>
-    <div id="body">
-      <h1>Kontakt</h1>
-      <div id="erstercontainer">
-        <hr class="dashed" />
-        <img src="~assets/pizza2.png" alt="Pizza vector" /><img />
-        <hr class="dashed" />
-      </div>
-      <h2>
+    </Div>
+    <Div id="body">
+      <H1>Kontakt</H1>
+      <Div id="erstercontainer">
+        <Hr class="dashed" />
+        <Img src="~assets/pizza2.png" alt="Pizza vector" /><Img />
+        <Hr class="dashed" />
+      </Div>
+      <H2>
         Wir sind neugierig auf Ihr Feedback! Schreiben Sie uns gerne eine
         Nachricht.
-      </h2>
-      <div>
-        <div class="container">
-          <form action="action_page.php">
-            <label for="vname">Vorname</label>
-            <input
+      </H2>
+      <Div>
+        <Div class="container">
+          <Form action="action_page.php">
+            <Label for="vname">Vorname</Label>
+            <Input
               type="text"
               id="vname"
               name="vorname"
               placeholder="Vorname"
             />
 
-            <label for="nname">Nachname</label>
-            <input
+            <Label for="nname">Nachname</Label>
+            <Input
               type="text"
               id="nname"
               name="nachname"
               placeholder="Nachname"
             />
 
-            <label for="ges">Geschlecht</label>
-            <select id="ges" name="geschlecht">
-              <option value="m">m</option>
-              <option value="w">w</option>
-              <option value="d">d</option>
-            </select>
+            <Label for="ges">Geschlecht</Label>
+            <Select id="ges" name="geschlecht">
+              <Option value="m">m</Option>
+              <Option value="w">w</Option>
+              <Option value="d">d</Option>
+            </Select>
 
-            <label for="nachricht">Nachricht:</label>
-            <textarea
+            <Label for="nachricht">Nachricht:</Label>
+            <TextArea
               id="nachricht"
               name="nachricht"
               placeholder="Nachricht eingeben."
               style="height: 200px"
-            ></textarea>
+            ></TextArea>
 
-            <input type="submit" value="Senden" />
-          </form>
-        </div>
-      </div>
-    </div>
-    <div id="footer">
-      <p>
-        Max Mustermann - Mustermannstraße 23 - 35234 Musterstadt - Steuernummer:
-        00000000000 - Landgericht Musterstadt
-      </p>
-    </div>
-  </div>
+            <Label class="container">
+              <Input type="checkbox" />
+              <Span class="checkmark"></Span>
+              Ich bin mit den Datenschutzbestimmungen einverstanden.
+            </Label>
+
+            <Input type="submit" value="Senden" />
+          </Form>
+        </Div>
+      </Div>
+    </Div>
+    <Footer />
+  </Div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "kontakt",
+};
 </script>
 
 <style scoped>
@@ -101,15 +104,6 @@ export default {};
   overflow-y: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-
-#footer {
-  display: flex;
-  width: 100vw;
-  background-color: rgb(250, 241, 228);
-  font-family: "Bitter", serif;
-  justify-content: center;
-  align-items: center;
 }
 
 #body::-webkit-scrollbar {

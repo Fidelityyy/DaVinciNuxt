@@ -1,36 +1,37 @@
 <template>
-  <div id="container">
-    <div id="header">
+  <Div id="container">
+    <Div id="header">
       <Navbar />
-    </div>
-    <div id="body">
-      <div id="logoarea">
-        <h1 id="logomain"><span style="color: DarkRed">Da</span>Vinci</h1>
-        <p id="untertitel">Die Pizzeria Ihres Vertrauens!</p>
-      </div>
-      <hr class="dashed" />
-      <div id="inhalt">
-        <div id="pizzavector">
+    </Div>
+    <Div id="body">
+      <Div id="logoarea">
+        <H1 id="logomain"><Span style="color: DarkRed">Da</Span>Vinci</H1>
+        <P id="untertitel">Die Pizzeria Ihres Vertrauens!</P>
+      </Div>
+      <Hr class="dashed" />
+      <Div id="inhalt">
+        <Div id="pizzavector">
           <img
             src="~assets/pizza.png"
             alt="Pizza vector"
             style="width: 20vw; height: auto; margin-top: 5vh"
-          /><img />
-        </div>
-      </div>
-    </div>
-    <div id="footer">
-      <p>
+          />
+        </Div>
+      </Div>
+    </Div>
+    <Div id="footer">
+      <P>
         Max Mustermann - Mustermannstraße 23 - 35234 Musterstadt - Steuernummer:
         00000000000 - Landgericht Musterstadt
-      </p>
-    </div>
-  </div>
+      </P>
+    </Div>
+  </Div>
 </template>
 
 <script>
 import Navbar from "../components/Navbar.vue";
 export default {
+  name: "index",
   components: { Navbar },
 };
 </script>
