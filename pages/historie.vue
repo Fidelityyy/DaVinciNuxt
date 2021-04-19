@@ -19,10 +19,18 @@
           Die Geschichte unseres Unternehmens fängt im Jahre 1472 an, als der
           Gründer unserer Pizzeria, Leonardo Da Vinci, sich mit 20 Jahren dazu
           entschließt, sein Hobby zum Beruf zu machen und eine Pizzeria zu
-          gründen.<Br />Da Vinci - eher bekannt durch seine literarischen Werke
-          - ist selbst ein großer Pizza-Fan mit Leib und Seele. Er versucht die
-          Branche mit seinen ausgefallenen Kreationen zu revolutionieren und
-          scheut dabei keinerlei Kosten und Mühe.
+          gründen.<Br />Da Vinci - eher bekannt durch seine künstlerischen Werke
+          und Erfindungen - ist selbst ein großer Pizza-Fan mit Leib und Seele.
+          1940 nimmt er, nach seiner 4 jährigen kulinarischen Weltreise, an den
+          internationalen Pizzaweltmeisterschaften Teil und gewinnt den dritten
+          Platz mit seiner "Chilly-Schokoladen-Pizza". Aus der Frustration und
+          seines Ehrgeizes heraus, zu der Spitze zu gehören, erfindet er die
+          noch heute international äußerst beliebte "8 -Käse-Pizza". Mit dieser
+          Weltneuheit gelingt es ihm nicht nur den ersten Platz in der Kategorie
+          "Beste Pizza" sondern auch den ersten Platz in der Kategorie "Größter Käseanteil" für
+          sich zu beanspruchen. Bis heute versucht er die Branche mit seinen ausgefallenen
+          Kreationen zu revolutionieren und scheut dabei keinerlei Kosten und
+          Mühe.
         </P>
       </Div>
       <Div id="ofenpizzabox">
