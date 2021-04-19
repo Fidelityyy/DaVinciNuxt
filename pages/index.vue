@@ -3,8 +3,7 @@
     <div id="header">
       <Navbar></Navbar>
     </div>
-    <div id="body">
-    </div>
+    <div id="body"></div>
     <div id="footer"></div>
   </div>
 </template>
@@ -24,9 +23,12 @@ export default {
   margin: 0;
   padding: 0;
   grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
-  grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+  grid-template-rows: 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh;
   grid-template-areas:
     "header header header header header"
+    "body body body body body"
+    "body body body body body"
+    "body body body body body"
     "body body body body body"
     "body body body body body"
     "body body body body body"
@@ -45,7 +47,7 @@ export default {
 }
 
 #footer {
-    background-color: aqua;
-    width: 100vw;
+  background-color: aqua;
+  width: 100vw;
 }
 </style>
