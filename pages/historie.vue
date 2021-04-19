@@ -4,38 +4,26 @@
       <Navbar />
     </div>
     <div id="body">
+      <h1>Historie</h1>
       <div id="erstercontainer">
         <hr class="dashed" />
-        <img
-          src="~assets/pizza2.png"
-          alt="Pizza vector"
-        /><img />
+        <img src="~assets/pizza2.png" alt="Pizza vector" /><img />
         <hr class="dashed" />
       </div>
-      <div id="zweitercontainer">
-        <div id="davinciblock">
-          <img
-            id="davinci"
-            src="https://www.planet-schule.de/mm/nie-wieder-keine-ahnung/malerei/img/kuenstler_da_vinci.jpg"
-            style="width: 10vw; height: auto; border-radius: 50%"
-          /><img />
-          <p class="leonardo">Leonardo Da Vinci</p>
-        </div>
-        <div id="pizzablock">
-          <img
-            id="pizzabild"
-            src="https://www.koch-mit.de/app/uploads/2020/02/ofenpizza.jpg"
-            style="width: 20vw; border-radius: 5%"
-          /><img />
-          <p id="pizzatext">
-            Unsere Traditions-Pizzeria besteht seit Ihrer Eröffnung im Jahre
-            1472 und überzeugt seitdem mit ihren frischen und leckeren Pizzen.
-          </p>
-        </div>
-        <div id="abtrennung"></div>
+      <div id = "leonardocontainer">
+      <div id="leonardobox">
+        <img src="~assets/davinciportait.jpg" id = "leonardobild"/>
+        <p id="#leonardobildunterschrift">Leonardo Da Vinci</p>
+      </div>
+          <p id="leonardotext">
+          Die Geschichte unserer Pizzeria fängt im Jahre 1472 an, als der
+          Gründer unserer Pizzeria, Leonardo Da Vinci, sich mit 20 Jahren dazu
+          entschließt, sein Hobby zum Beruf zu machen und eine Pizzeria zu
+          gründen.
+        </p>
       </div>
     </div>
-    <div id="footer"></div>
+    <div id="footer"><p>Max Mustermann - Mustermannstraße 23 - 35234 Musterstadt - Steuernummer: 00000000000 - Landgericht Musterstadt</p></div>
   </div>
 </template>
 
@@ -86,47 +74,63 @@ export default {};
 
 #erstercontainer {
   display: flex;
-  width: 90vw;
+  width: 100vw;
   justify-content: center;
 }
 
 hr.dashed {
   display: flex;
-  width: 100%;
+  width: 40%;
   border-top: 3px dashed #bbb;
   align-self: center;
 }
-#zweitercontainer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+
+#leonardotext {
   text-align: center;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  font-family: "Bitter", serif;
+  background-color: floralwhite;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
-#davinciblock {
+#leonardobox {
   display: flex;
   flex-direction: column;
-  align-self: start;
+  align-items: center;
+  text-align: center;
+  margin-left: 10vw;
 }
 
-#pizzablock {
-  display: flex;
+#leonardocontainer {
+  display:flex;
+  margin-top: 5vh;
+}
+
+#leonardobild {
+  border-radius: 50%;
   width: 10vw;
+  margin-bottom: 1vh;
   height: auto;
-  align-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
-#pizzatext {
-  margin-left: 5vw;
-  display: flex;
-  width: 10vw;
-  height: 10vh;
+#leonardobildunterschrift {
+  font-family: "Great Vibes", cursive;
 }
 
 #footer {
-  grid-area: footer;
+  display:flex;
   width: 100vw;
   background-color: antiquewhite;
-  height: 100%;
+  font-family: "Bitter", serif;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Bitter", serif;
+  font-size: 8vh;
 }
 </style>

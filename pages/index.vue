@@ -15,7 +15,7 @@
         </div>
       </div>
     </div>
-    <div id="footer"></div>
+    <div id="footer"><p>Max Mustermann - Mustermannstraße 23 - 35234 Musterstadt - Steuernummer: 00000000000 - Landgericht Musterstadt</p></div>
   </div>
 </template>
 
@@ -96,7 +96,11 @@ hr.dashed {
 }
 
 #footer {
+  display:flex;
   width: 100vw;
   background-color: antiquewhite;
+  font-family: "Bitter", serif;
+  justify-content: center;
+  align-items: center;
 }
 </style>
