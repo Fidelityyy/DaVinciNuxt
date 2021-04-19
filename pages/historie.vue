@@ -4,7 +4,7 @@
       <Navbar />
     </div>
     <div id="body">
-      <h1 id = "überschrift">Historie</h1>
+      <h1 id="überschrift">Historie</h1>
       <div id="erstercontainer">
         <hr class="dashed" />
         <img src="~assets/pizza2.png" alt="Pizza vector" /><img />
@@ -43,10 +43,17 @@
           sich an unserem Kamin zu einem köstlichen Cappucino.
         </p>
       </div>
-      <div id = "zahlungsmethoden">
-        <img src = "~assets/kreditkarte.png"/>
-        <h1 id = "zahlungsüberschrift">Haben Sie mal nicht das nötige Geld dabei? Kein Problem!</h1>
-        <p1 id ="zahlungsmethodentext">Bei uns können Sie in Bar oder bequem per Debitkarte bezahlen - natürlich kontaktlos!</p1>
+      <div id="zahlungsmethoden">
+        <img src="~assets/kreditkarte.png" id="kreditkarte" />
+        <div id="zahlungstextbox">
+          <h1 id="zahlungsüberschrift">
+            Haben Sie mal nicht das nötige Geld dabei? Kein Problem!
+          </h1>
+          <p1 id="zahlungsmethodentext"
+            >Bei uns können Sie in Bar oder bequem per Debitkarte bezahlen -
+            natürlich kontaktlos!</p1
+          >
+        </div>
       </div>
     </div>
     <div id="footer">
@@ -201,8 +208,10 @@ hr.dashed {
 }
 
 #zahlungsmethoden {
+  display: flex;
   background-color: bisque;
   margin-top: 5vh;
+  align-items: center;
 }
 
 #zahlungsüberschrift {
@@ -211,8 +220,18 @@ hr.dashed {
 }
 
 #zahlungsmethodentext {
-  display:flex;
+  display: flex;
   justify-content: center;
+}
+
+#kreditkarte {
+  width: 30vw;
+  height: auto;
+}
+
+#zahlungstextbox {
+  display:flex;
+  flex-direction: column;
 }
 
 #überschrift {
