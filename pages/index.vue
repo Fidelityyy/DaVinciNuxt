@@ -1,21 +1,30 @@
 <template>
   <div id="container">
     <div id="header">
-      <Navbar/>
+      <Navbar />
     </div>
     <div id="body">
       <div id="logoarea">
         <h1 id="logomain"><span style="color: DarkRed">Da</span>Vinci</h1>
         <p id="untertitel">Die Pizzeria Ihres Vertrauens!</p>
       </div>
-      <hr class = "dashed"/>
-      <div id = "inhalt">
-        <div id = "pizzavector">
-          <img src = "~assets/pizza.png" alt="Pizza vector" style="width: 20vw; height: auto; margin-top: 5vh;"><img>
+      <hr class="dashed" />
+      <div id="inhalt">
+        <div id="pizzavector">
+          <img
+            src="~assets/pizza.png"
+            alt="Pizza vector"
+            style="width: 20vw; height: auto; margin-top: 5vh"
+          /><img />
         </div>
       </div>
     </div>
-    <div id="footer"><p>Max Mustermann - Mustermannstraße 23 - 35234 Musterstadt - Steuernummer: 00000000000 - Landgericht Musterstadt</p></div>
+    <div id="footer">
+      <p>
+        Max Mustermann - Mustermannstraße 23 - 35234 Musterstadt - Steuernummer:
+        00000000000 - Landgericht Musterstadt
+      </p>
+    </div>
   </div>
 </template>
 
@@ -62,7 +71,7 @@ export default {
   -ms-overflow-style: none;
   scrollbar-width: none;
   width: 100vw;
-  background-image: url('~assets/davinci2.jpg');
+  background-image: url("~assets/davinci2.jpg");
   background-size: 80%;
   background-position: top;
 }
@@ -80,25 +89,25 @@ export default {
 }
 
 hr.dashed {
-  display:flex;
+  display: flex;
   border-top: 3px dashed #bbb;
   width: 80vw;
   align-self: center;
 }
 
 #pizzavector {
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
 #body::-webkit-scrollbar {
-  display:none;
+  display: none;
 }
 
 #footer {
-  display:flex;
+  display: flex;
   width: 100vw;
-  background-color: antiquewhite;
+  background-color: rgb(250, 241, 228);
   font-family: "Bitter", serif;
   justify-content: center;
   align-items: center;

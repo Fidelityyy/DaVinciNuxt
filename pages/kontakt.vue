@@ -106,7 +106,7 @@ export default {};
 #footer {
   display: flex;
   width: 100vw;
-  background-color: antiquewhite;
+  background-color: rgb(250, 241, 228);
   font-family: "Bitter", serif;
   justify-content: center;
   align-items: center;

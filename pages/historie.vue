@@ -209,7 +209,11 @@ hr.dashed {
 
 #zahlungsmethoden {
   display: flex;
-  background-image: linear-gradient(bisque, white, bisque);
+  background-image: linear-gradient(
+    rgb(250, 241, 228),
+    white,
+    rgb(250, 241, 228)
+  );
   margin-top: 5vh;
   align-items: center;
 }
@@ -243,7 +247,7 @@ hr.dashed {
 #footer {
   display: flex;
   width: 100vw;
-  background-color: antiquewhite;
+  background-color: rgb(250, 241, 228);
   font-family: "Bitter", serif;
   justify-content: center;
   align-items: center;
