@@ -13,6 +13,20 @@
           placeholder="Nachricht"
           class="nachrichtfeld"
         />
+        <!--         <div class="loginarea">
+          <p>Login:</p>
+
+          <input
+            v-model.lazy="benutzername"
+            placeholder="Benutzername"
+            class="benutzernamefeld"
+          />
+          <input
+            v-model.lazy="passwort"
+            placeholder="Passwort"
+            class="passwortfeld"
+          />
+        </div> -->
         <button @click="elementEinfügen()" class="sendenknopf">Senden</button>
       </div>
       <div v-for="eingabe in eingaben" v-bind:key="eingabe.nachricht">
@@ -45,6 +59,15 @@ export default {
     elementEinfügen() {
       let name = this.name;
       let nachricht = this.nachricht;
+      for(this.index; this.index >= 0; this.index--) {
+        if(typeof this.eingaben[this.index] == 'undefined') {
+        break;
+        } else {
+          while(typeof this.eingaben[index] != 'undefined') {
+            this.index++;
+          }
+        }
+      }
       let index = this.index;
       this.eingaben.push({ name, nachricht, index });
       this.index++;
@@ -52,7 +75,9 @@ export default {
       this.nachricht = "";
     },
     elementLoeschen(index) {
-      this.eingaben.splice(index);
+      let indexalt = index;
+      this.eingaben.splice(index,1);
+
     },
   },
 };
@@ -109,9 +134,8 @@ export default {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-left: 30vw;
   margin-right: 30vw;
-  padding-bottom: 2vh;
-  padding-top: 2vh;
   border-radius: 3%;
+  padding-bottom: 5vh;
   margin-bottom: 5vh;
 }
 
@@ -126,6 +150,28 @@ export default {
 .nachrichtfeld {
   width: 30vw;
   margin-left: 2vw;
+}
+
+.loginarea {
+  margin-top: 2vh;
+  margin-left: 2vw;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.logintickbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.benutzernamefeld {
+  margin-bottom: 1vh;
+}
+
+.passwortfeld {
+  margin-top: 1vh;
 }
 
 .sendenknopf {
