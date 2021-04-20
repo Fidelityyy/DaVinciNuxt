@@ -19,6 +19,8 @@
         <GaestebuchEintrag
           v-bind:elementname="eingabe.name"
           :elementnachricht="eingabe.nachricht"
+          :index="eingabe.index"
+          @geloescht="elementLoeschen"
         />
       </div>
     </div>
@@ -35,6 +37,7 @@ export default {
     return {
       name: "",
       nachricht: "",
+      index: 0,
       eingaben: [],
     };
   },
@@ -42,11 +45,14 @@ export default {
     elementEinfügen() {
       let name = this.name;
       let nachricht = this.nachricht;
-      this.eingaben.push({ name, nachricht });
+      let index = this.index;
+      this.eingaben.push({ name, nachricht, index });
+      this.index++;
       this.name = "";
       this.nachricht = "";
     },
-    elementLöschen() {
+    elementLoeschen(index) {
+      this.eingaben.splice(index);
     },
   },
 };
@@ -126,6 +132,30 @@ export default {
   align-self: center;
   width: 10vw;
   margin-top: 5vh;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  margin-right: 1vw;
+}
+
+.sendenknopf:hover {
+  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+  background-color: #e9e9e9;
+}
+.sendenknopf:active {
+  position: relative;
+  top: 1px;
 }
 
 .einträge {
