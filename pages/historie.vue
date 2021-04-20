@@ -20,14 +20,17 @@
       </div>
       <div id="ofenpizzabox">
         <p id="ofentext">
-          1990 - Eröffnung unserer Filiale<br>1992 - Einführung unseres Lieferservices<br>
+          1990 - Eröffnung unserer Filiale<br />1992 - Einführung unseres
+          Lieferservices<br />1993 - Auszeichnung zur "Besten Pizzeria in der
+          Region"<br />
+          2005 - Eröffnung unserer Zweitfiliale in Hamburg
         </p>
         <img src="~assets/ofenpizza.jpg" id="ofenpizza" />
       </div>
       <div id="pizzeria">
         <img src="~assets/pizzeria.webp" id="pizzeriabild" />
         <p id="pizzeriatext">
-          Unser Ristorante bietet Ihnen ein Ambiente, das seinesgleichen sucht.
+          Unser Ristorante bietet Ihnen ein Ambiente, das seinesgleichen sucht.<br>
           Genießen Sie eine leckere Margherita-Pizza, während Sie den Abend auf
           unserer Terasse mit Meeresblick ausklingen lassen oder entspannen Sie
           sich an unserem Kamin zu einem köstlichen Cappucino.
@@ -109,6 +112,7 @@ export default {
   background-color: floralwhite;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 5vh;
+  padding: 2vw;
 }
 
 #ofentext {
@@ -120,6 +124,7 @@ export default {
   font-family: "Bitter", serif;
   background-color: floralwhite;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2vw;
 }
 
 #leonardobox {
@@ -132,20 +137,21 @@ export default {
 
 #leonardocontainer {
   display: flex;
-  margin-top: 5vh;
+  justify-content: space-evenly;
 }
 
 #ofenpizzabox {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
+  margin-right: 10vw;
 }
 
 #ofenpizza {
   border-radius: 5%;
   width: 20vw;
   height: auto;
-  margin-right: 10vw;
 }
 
 #leonardobild {
@@ -168,6 +174,8 @@ export default {
   font-family: "Bitter", serif;
   background-color: floralwhite;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2vw;
+  width: 40vw;
 }
 
 #pizzeriabild {
