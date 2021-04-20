@@ -16,7 +16,10 @@
         <button @click="elementEinfügen()" class="sendenknopf">Senden</button>
       </div>
       <div v-for="eingabe in eingaben" v-bind:key="eingabe.nachricht">
-        <GaestebuchEintrag v-bind:elementname="eingabe.name" :elementnachricht="eingabe.nachricht"/>
+        <GaestebuchEintrag
+          v-bind:elementname="eingabe.name"
+          :elementnachricht="eingabe.nachricht"
+        />
       </div>
     </div>
     <Footer />
@@ -40,9 +43,10 @@ export default {
       let name = this.name;
       let nachricht = this.nachricht;
       this.eingaben.push({ name, nachricht });
+      this.name = "";
+      this.nachricht = "";
     },
-    elementLöschen(index) {
-      this.eingaben.splice(index, 1);
+    elementLöschen() {
     },
   },
 };
