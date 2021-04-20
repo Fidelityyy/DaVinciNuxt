@@ -6,6 +6,9 @@
       <BNavbarNav>
         <BNavItem href="/historie">Historie</BNavItem>
         <BNavItem href="/kontakt">Kontakt</BNavItem>
+        <BNavItem href="/gästebuch">Gästebuch</BNavItem>
+        <BNavItem href="/datenschutzbestimmungen">Datenschutzbestimmungen</BNavItem>
+        <BNavItem href="/impressum">Impressum</BNavItem>
       </BNavbarNav>
       <BNavbarNav class="ml-auto"> </BNavbarNav>
     </BCollapse>
@@ -18,7 +21,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #navigation {
   height: 100%;
   background-color: rgb(250, 241, 228);

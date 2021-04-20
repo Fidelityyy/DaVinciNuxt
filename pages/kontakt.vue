@@ -1,66 +1,62 @@
 <template>
-  <Div id="container">
-    <Div id="header">
+  <div id="container">
+    <div id="header">
       <Navbar />
-    </Div>
-    <Div id="body">
-      <H1>Kontakt</H1>
-      <Div id="erstercontainer">
-        <Hr class="dashed" />
-        <img src="~assets/pizza2.png" alt="Pizza vector" /><img />
-        <Hr class="dashed" />
-      </Div>
-      <H2>
+    </div>
+    <div id="body">
+      <h1>Kontakt</h1>
+      <PizzaTrenner/>
+      <h2>
         Wir sind neugierig auf Ihr Feedback! Schreiben Sie uns gerne eine
         Nachricht.
-      </H2>
-      <Div>
-        <Div class="container">
-          <Form action="action_page.php">
-            <Label for="vname">Vorname</Label>
-            <Input
+      </h2>
+      <div>
+        <div class="container">
+          <form action="action_page.php">
+            <label for="vname">Vorname</label>
+            <input
               type="text"
               id="vname"
               name="vorname"
               placeholder="Vorname"
             />
 
-            <Label for="nname">Nachname</Label>
-            <Input
+            <label for="nname">Nachname</label>
+            <input
               type="text"
               id="nname"
               name="nachname"
               placeholder="Nachname"
             />
 
-            <Label for="ges">Geschlecht</Label>
-            <Select id="ges" name="geschlecht">
-              <Option value="m">m</Option>
-              <Option value="w">w</Option>
-              <Option value="d">d</Option>
-            </Select>
+            <label for="ges">Geschlecht</label>
+            <select id="ges" name="geschlecht">
+              <option value="m">m</option>
+              <option value="w">w</option>
+              <option value="d">d</option>
+            </select>
 
-            <Label for="nachricht">Nachricht:</Label>
-            <TextArea
+            <label for="nachricht">Nachricht:</label>
+            <textarea
               id="nachricht"
               name="nachricht"
               placeholder="Nachricht eingeben."
               style="height: 200px"
-            ></TextArea>
+            ></textarea>
 
-            <Label class="container">
-              <Input type="checkbox" />
-              <Span class="checkmark"></Span>
+            <label class="container">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
               Ich bin mit den Datenschutzbestimmungen einverstanden.
-            </Label>
+            </label>
 
-            <Input type="submit" value="Senden" />
-          </Form>
-        </Div>
-      </Div>
-    </Div>
+            <input type="submit" value="Senden" />
+          </form>
+        </div>
+      </div>
+    </div>
     <Footer />
-  </Div>
+  </div>
 </template>
 
 <script>
@@ -121,19 +117,6 @@ h2 {
   font-size: 3vh;
   margin-top: 3vh;
   margin-bottom: 5vh;
-}
-
-hr.dashed {
-  display: flex;
-  width: 100%;
-  border-top: 3px dashed #bbb;
-  align-self: center;
-}
-
-#erstercontainer {
-  display: flex;
-  width: 90vw;
-  justify-content: center;
 }
 
 input[type="text"],

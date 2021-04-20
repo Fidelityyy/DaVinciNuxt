@@ -1,10 +1,10 @@
 <template>
-  <Div id="footer">
-    <P>
+  <div class="footer">
+    <p>
       Max Mustermann - Mustermannstraße 23 - 35234 Musterstadt - Steuernummer:
       00000000000 - Landgericht Musterstadt
-    </P>
-  </Div>
+    </p>
+  </div>
 </template>
 
 <script>
@@ -13,8 +13,8 @@ export default {
 };
 </script>
 
-<style>
-#footer {
+<style scoped>
+.footer {
   display: flex;
   width: 100vw;
   background-color: rgb(250, 241, 228);

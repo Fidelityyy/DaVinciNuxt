@@ -1,31 +1,26 @@
 <template>
-  <Div id="container">
-    <Div id="header">
+  <div id="container">
+    <div id="header">
       <Navbar />
-    </Div>
-    <Div id="body">
-      <Div id="logoarea">
-        <H1 id="logomain"><Span style="color: DarkRed">Da</Span>Vinci</H1>
-        <P id="untertitel">Die Pizzeria Ihres Vertrauens!</P>
-      </Div>
-      <Hr class="dashed" />
-      <Div id="inhalt">
-        <Div id="pizzavector">
+    </div>
+    <div id="body">
+      <div id="logoarea">
+        <h1 id="logomain"><span style="color: DarkRed">Da</span>Vinci</h1>
+        <p id="untertitel">Die Pizzeria Ihres Vertrauens!</p>
+      </div>
+      <hr class="dashed" />
+      <div id="inhalt">
+        <div id="pizzavector">
           <img
             src="~assets/pizza.png"
             alt="Pizza vector"
             style="width: 20vw; height: auto; margin-top: 5vh"
           />
-        </Div>
-      </Div>
-    </Div>
-    <Div id="footer">
-      <P>
-        Max Mustermann - Mustermannstraße 23 - 35234 Musterstadt - Steuernummer:
-        00000000000 - Landgericht Musterstadt
-      </P>
-    </Div>
-  </Div>
+        </div>
+      </div>
+    </div>
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -36,7 +31,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #container {
   display: grid;
   width: 100vw;
@@ -103,14 +98,5 @@ hr.dashed {
 
 #body::-webkit-scrollbar {
   display: none;
-}
-
-#footer {
-  display: flex;
-  width: 100vw;
-  background-color: rgb(250, 241, 228);
-  font-family: "Bitter", serif;
-  justify-content: center;
-  align-items: center;
 }
 </style>

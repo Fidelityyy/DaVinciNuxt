@@ -1,71 +1,53 @@
 <template>
-  <Div id="container">
-    <Div id="header">
+  <div id="container">
+    <div id="header">
       <Navbar />
-    </Div>
-    <Div id="body">
-      <H1 id="überschrift">Historie</H1>
-      <Div id="erstercontainer">
-        <Hr class="dashed" />
-        <img src="~assets/pizza2.png" alt="Pizza vector" />
-        <Hr class="dashed" />
-      </Div>
-      <Div id="leonardocontainer">
-        <Div id="leonardobox">
+    </div>
+    <div id="body">
+      <h1 id="überschrift">Historie</h1>
+      <PizzaTrenner />
+      <div id="leonardocontainer">
+        <div id="leonardobox">
           <img src="~assets/davinciportait.jpg" id="leonardobild" />
-          <P id="#leonardobildunterschrift">Leonardo Da Vinci</P>
-        </Div>
-        <P id="leonardotext">
-          Die Geschichte unseres Unternehmens fängt im Jahre 1472 an, als der
-          Gründer unserer Pizzeria, Leonardo Da Vinci, sich mit 20 Jahren dazu
-          entschließt, sein Hobby zum Beruf zu machen und eine Pizzeria zu
-          gründen.<Br />Da Vinci - eher bekannt durch seine künstlerischen Werke
-          und Erfindungen - ist selbst ein großer Pizza-Fan mit Leib und Seele.
-          1940 nimmt er, nach seiner 4 jährigen kulinarischen Weltreise, an den
-          internationalen Pizzaweltmeisterschaften Teil und gewinnt den dritten
-          Platz mit seiner "Chilly-Schokoladen-Pizza". Aus der Frustration und
-          seines Ehrgeizes heraus, zu der Spitze zu gehören, erfindet er die
-          noch heute international äußerst beliebte "8 -Käse-Pizza". Mit dieser
-          Weltneuheit gelingt es ihm nicht nur den ersten Platz in der Kategorie
-          "Beste Pizza" sondern auch den ersten Platz in der Kategorie "Größter Käseanteil" für
-          sich zu beanspruchen. Bis heute versucht er die Branche mit seinen ausgefallenen
-          Kreationen zu revolutionieren und scheut dabei keinerlei Kosten und
-          Mühe.
-        </P>
-      </Div>
-      <Div id="ofenpizzabox">
-        <P id="ofentext">
-          Diese Einstellung von Da Vinci haben wir uns zum Motto gemacht! Wir
-          bieten Ihnen stets neue Kreationen zu unschlagbarem Preis. <Br />
-          Hierfür verwenden wir natürliche stets frische und echt italienische
-          Zutaten.
-        </P>
+          <p id="#leonardobildunterschrift">Leonardo Da Vinci</p>
+        </div>
+        <p id="leonardotext">
+          1472 - Eröffnung seiner ersten Pizzeria<br />1478 - Teilnahme an der
+          internationalen Pizzaweltmeisterschaft<br />1482 - Promotion an der
+          Hochschule für Ernährungswissenschaften in Wien<br />1490 - Eröffnung
+          seiner Filiale in New York<br />
+        </p>
+      </div>
+      <div id="ofenpizzabox">
+        <p id="ofentext">
+          1990 - Eröffnung unserer Filiale<br>1992 - Einführung unseres Lieferservices<br>
+        </p>
         <img src="~assets/ofenpizza.jpg" id="ofenpizza" />
-      </Div>
-      <Div id="pizzeria">
+      </div>
+      <div id="pizzeria">
         <img src="~assets/pizzeria.webp" id="pizzeriabild" />
-        <P id="pizzeriatext">
+        <p id="pizzeriatext">
           Unser Ristorante bietet Ihnen ein Ambiente, das seinesgleichen sucht.
           Genießen Sie eine leckere Margherita-Pizza, während Sie den Abend auf
           unserer Terasse mit Meeresblick ausklingen lassen oder entspannen Sie
           sich an unserem Kamin zu einem köstlichen Cappucino.
-        </P>
-      </Div>
-      <Div id="zahlungsmethoden">
+        </p>
+      </div>
+      <div id="zahlungsmethoden">
         <img src="~assets/kreditkarte.png" id="kreditkarte" />
-        <Div id="zahlungstextbox">
-          <H1 id="zahlungsüberschrift">
+        <div id="zahlungstextbox">
+          <h1 id="zahlungsüberschrift">
             Haben Sie mal nicht das nötige Geld dabei? Kein Problem!
-          </H1>
-          <P1 id="zahlungsmethodentext"
+          </h1>
+          <p1 id="zahlungsmethodentext"
             >Bei uns können Sie in Bar oder bequem per Debitkarte bezahlen -
-            natürlich kontaktlos!</P1
+            natürlich kontaktlos!</p1
           >
-        </Div>
-      </Div>
-    </Div>
+        </div>
+      </div>
+    </div>
     <Footer />
-  </Div>
+  </div>
 </template>
 
 <script>
@@ -74,7 +56,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #container {
   display: grid;
   width: 100vw;
@@ -115,28 +97,18 @@ export default {
   display: none;
 }
 
-#erstercontainer {
-  display: flex;
-  width: 100vw;
-  justify-content: center;
-}
-
-hr.dashed {
-  display: flex;
-  width: 40%;
-  border-top: 3px dashed #bbb;
-  align-self: center;
-}
-
 #leonardotext {
   display: flex;
   align-items: center;
   text-align: center;
   margin-right: 10vw;
   margin-left: 10vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
   font-family: "Bitter", serif;
   background-color: floralwhite;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 5vh;
 }
 
 #ofentext {
