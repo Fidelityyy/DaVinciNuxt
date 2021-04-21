@@ -7,7 +7,7 @@
 <script>
 export default {
   name: "gericht",
-  props: ["elementname","elementpreis", "index"],
+  props: { elementname: String, elementpreis: Number, index: Number },
 };
 </script>
 

@@ -8,7 +8,7 @@
       <PizzaTrenner />
       <div class="impressumstext">
         <p1 class="text">
-<div class='impressum'><h1>Impressum</h1><p>Angaben gemäß § 5 TMG</p><p>Max Muster <br> 
+<div class='impressum'><p>Angaben gemäß § 5 TMG</p><p>Max Muster <br> 
 Musterweg<br> 
 12345 Musterstadt <br> 
 </p><p> <strong>Vertreten durch: </strong><br>

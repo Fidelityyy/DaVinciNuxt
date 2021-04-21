@@ -111,12 +111,12 @@ export default {
       let name = this.name;
       let preis = this.preis;
       let index;
-      einfuegaktion: for (let i = 0; i < this.gerichte.length; i++) {
+/*       einfuegaktion: for (let i = 0; i < this.gerichte.length; i++) {
         if (typeof this.gerichte[i] == "undefined") {
           this.index = i;
           break einfuegaktion;
         }
-      }
+      } */
       restfunktion: index = this.index;
       this.gerichte.push({ name, preis, index });
       this.index++;
@@ -126,9 +126,11 @@ export default {
   },
   computed: {
       gesamtpreisberechnet: function() {
-          for(let gericht in this.gerichte) {
-              this.gesamtpreis += gericht.elementpreis;
-          }
+          console.log(this.gerichte);
+           for(let gericht of this.gerichte) {
+               console.log(JSON.stringify(gericht));
+              this.gesamtpreis += gericht.preis;
+          } 
           return this.gesamtpreis;
       }
 
