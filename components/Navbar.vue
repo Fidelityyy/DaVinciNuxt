@@ -9,6 +9,7 @@
         <BNavItem href="/gästebuch">Gästebuch</BNavItem>
         <BNavItem href="/datenschutzbestimmungen">Datenschutzbestimmungen</BNavItem>
         <BNavItem href="/impressum">Impressum</BNavItem>
+        <BNavItem href="/bestellseite">Bestellen</BNavItem>
       </BNavbarNav>
       <BNavbarNav class="ml-auto"> </BNavbarNav>
     </BCollapse>

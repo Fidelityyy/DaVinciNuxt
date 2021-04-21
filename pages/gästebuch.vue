@@ -59,25 +59,23 @@ export default {
     elementEinfügen() {
       let name = this.name;
       let nachricht = this.nachricht;
-      for(this.index; this.index >= 0; this.index--) {
-        if(typeof this.eingaben[this.index] == 'undefined') {
-        break;
-        } else {
-          while(typeof this.eingaben[index] != 'undefined') {
-            this.index++;
-          }
+      let index;
+      einfuegaktion: for (let i = 0; i < this.eingaben.length; i++) {
+        if (typeof this.eingaben[i] == "undefined") {
+          this.index = i;
+          break einfuegaktion;
         }
       }
-      let index = this.index;
+      restfunktion: 
+      index = this.index;
       this.eingaben.push({ name, nachricht, index });
       this.index++;
       this.name = "";
       this.nachricht = "";
     },
     elementLoeschen(index) {
-      let indexalt = index;
-      this.eingaben.splice(index,1);
-
+      this.eingaben.splice(index, 1);
+      this.index = this.eingaben.length - 1;
     },
   },
 };

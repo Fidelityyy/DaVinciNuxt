@@ -1,6 +1,5 @@
 <template>
   <div class="nachrichten">
-    <p class="angezeigterindex"><b>Index</b>: {{ index }}</p>
     <p class="angezeigtername"><b>Name</b>: {{ elementname }}</p>
     <p class="angezeigtenachricht"><b>Nachricht</b>: {{ elementnachricht }}</p>
     <div class="interaktionsknöpfe">
@@ -14,7 +13,7 @@
 
 <script>
 export default {
-  name: "gaestebuch",
+  name: "gaestebucheintrag",
   props: ["elementname", "elementnachricht", "index"],
   methods: {
     emitten() {
