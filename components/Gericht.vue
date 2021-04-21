@@ -1,7 +1,7 @@
 <template>
   <div class="containergericht">
     <p class="angezeigtername">{{ elementname }}</p>
-    <p class="angezeigtenachricht">{{ elementpreis }}</p>
+    <p class="angezeigterpreis">{{ elementpreis }}</p>
   </div>
 </template>
 
