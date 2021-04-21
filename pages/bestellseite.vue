@@ -9,21 +9,82 @@
       <div class="bestellcontainer">
         <div class="bestellbox">
           <div class="gericht" style="border: none">
-            <a href="#" @click="elementEinfügen()" class="gericht"
-              >Pizza Margherita - <b>16.99</b></a
+            <a
+              href="#"
+              @click="
+                name = 'Pizza Margherita';
+                preis = 16.99;
+                elementEinfügen();
+              "
+              class="gericht"
+              >Pizza Margherita - <b>16.99€</b></a
             >
-            <a href="#" class="gericht">Pizza Schinken - <b>18.99</b></a>
-            <a href="#" class="gericht">Pizza Salami - <b>18.99</b></a>
-            <a href="#" class="gericht">Pizza Tonno - <b>17.99</b></a>
-            <a href="#" class="gericht">Pizza Hawaii - <b>20.99</b></a>
-            <a href="#" class="gericht"
-              >Pizza Quattro Formaggi - <b>22.99</b></a
+            <a
+              href="#"
+              @click="
+                name = 'Pizza Schinken';
+                preis = 18.99;
+                elementEinfügen();
+              "
+              class="gericht"
+              >Pizza Schinken - <b>18.99€</b></a
+            >
+            <a
+              href="#"
+              @click="
+                name = 'Pizza Salami';
+                preis = 18.99;
+                elementEinfügen();
+              "
+              class="gericht"
+              >Pizza Salami - <b>18.99€</b></a
+            >
+            <a
+              href="#"
+              @click="
+                name = 'Pizza Tonno';
+                preis = 17.99;
+                elementEinfügen();
+              "
+              class="gericht"
+              >Pizza Tonno - <b>17.99€</b></a
+            >
+            <a
+              href="#"
+              @click="
+                name = 'Pizza Hawaii';
+                preis = 20.99;
+                elementEinfügen();
+              "
+              class="gericht"
+              >Pizza Hawaii - <b>20.99€</b></a
+            >
+            <a
+              href="#"
+              @click="
+                name = 'Pizza 4 Kaese';
+                preis = 22.99;
+                elementEinfügen();
+              "
+              class="gericht"
+              >Pizza 4 Käse - <b>22.99€</b></a
             >
           </div>
           <div class="menubestellt">
             <p>Bestellung:</p>
-            <div>
-              <Gericht />
+            <div
+              v-for="gericht in gerichte"
+              v-bind:key="gericht.index"
+              class="gerichtsblock"
+            >
+              <Gericht
+                v-bind:elementname="gericht.name"
+                :elementpreis="gericht.preis"
+                :index="gericht.index"
+              />
+            </div>
+            <div class="preisblock">
+              <p>Preis: {{ gesamtpreisberechnet }}€</p>
             </div>
           </div>
         </div>
@@ -40,29 +101,38 @@ export default {
     return {
       index: 0,
       name: "",
-      preis: 0,
+      preis: 0.00,
       gerichte: [],
+      gesamtpreis: 0.00,
     };
   },
   methods: {
     elementEinfügen() {
       let name = this.name;
-      let nachricht = this.nachricht;
+      let preis = this.preis;
       let index;
-      einfuegaktion: for (let i = 0; i < this.eingaben.length; i++) {
-        if (typeof this.eingaben[i] == "undefined") {
+      einfuegaktion: for (let i = 0; i < this.gerichte.length; i++) {
+        if (typeof this.gerichte[i] == "undefined") {
           this.index = i;
           break einfuegaktion;
         }
       }
-      restfunktion: 
-      index = this.index;
-      this.eingaben.push({ name, nachricht, index });
+      restfunktion: index = this.index;
+      this.gerichte.push({ name, preis, index });
       this.index++;
       this.name = "";
-      this.nachricht = "";
+      this.preis = "";
     },
   },
+  computed: {
+      gesamtpreisberechnet: function() {
+          for(let gericht in this.gerichte) {
+              this.gesamtpreis += gericht.elementpreis;
+          }
+          return this.gesamtpreis;
+      }
+
+  }
 };
 </script>
 
@@ -126,6 +196,10 @@ export default {
   width: 40vw;
   margin-bottom: 10vh;
   align-self: center;
+  height: 70vh;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .gericht {

@@ -75,7 +75,10 @@ export default {
     },
     elementLoeschen(index) {
       this.eingaben.splice(index, 1);
-      this.index = this.eingaben.length - 1;
+      this.index = this.eingaben.length;
+      for(let i = 0; i < this.eingaben.length; i++) {
+        this.eingaben[i].index = i;
+      }
     },
   },
 };

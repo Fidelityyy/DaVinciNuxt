@@ -1,14 +1,13 @@
 <template>
   <div class="containergericht">
-    <p class="angezeigtername">{{ elementname }}</p>
-    <p class="angezeigterpreis">{{ elementpreis }}</p>
+    <p class="angezeigtername">{{ elementname }} - {{ elementpreis }}€</p>
   </div>
 </template>
 
 <script>
 export default {
   name: "gericht",
-  props: ["elementname", "elementpreis", "index"],
+  props: ["elementname","elementpreis", "index"],
 };
 </script>
 
@@ -17,6 +16,6 @@ export default {
   display: flex;
   flex-direction: column;
   /* border: 1px solid #000000; */
-  font-size: 2vw;
+  font-size: 1vw;
 }
 </style>
