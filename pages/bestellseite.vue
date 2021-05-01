@@ -128,7 +128,7 @@ export default {
       gesamtpreisberechnet: function() {
           console.log(this.gerichte);
            for(let gericht of this.gerichte) {
-               console.log(JSON.stringify(gericht));
+
               this.gesamtpreis += gericht.preis;
           } 
           return this.gesamtpreis;
